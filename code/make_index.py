@@ -20,7 +20,9 @@ for n in contents:
                 title = xml_root.find("DISS_description/DISS_title")
                 author_fname = xml_root.find("DISS_authorship/DISS_author[@type='primary']/DISS_name/DISS_fname")
                 author_surname = xml_root.find("DISS_authorship/DISS_author[@type='primary']/"+"DISS_name/DISS_surname")
-                inst_contact = xml_root.find("DISS_description/DISS_institution/DISS_inst_contact") 
+                inst_contact = xml_root.find("DISS_description/DISS_institution/DISS_inst_contact")
+
+
                 comp_date = xml_root.find("DISS_description/DISS_dates/DISS_comp_date")
                 license = xml_root.find("DISS_creative_commons_license/DISS_abbreviation")
                 acceptance = xml_root.find("DISS_repository/DISS_acceptance")
